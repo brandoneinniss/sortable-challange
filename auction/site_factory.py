@@ -4,6 +4,7 @@ from models.site import Site
 class SiteFactory:
     @staticmethod
     def create_site_dict(sites_data, bidders):
+        """Creates a site dictionary and returns dictionary"""
         site_object_dict = {}
         for site in sites_data:
             site_object_dict[site.name] = \
@@ -12,6 +13,7 @@ class SiteFactory:
 
     @staticmethod
     def _create_site(site_data, bidders_input):
+        """Creates a site object and returns site"""
         name = site_data.name
         bidders = [bidders_input[name] for name in site_data.bidders]
         floor = site_data.floor
