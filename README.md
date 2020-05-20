@@ -68,10 +68,10 @@ building and running your submission with the same toolchain as you.
 - Run project using `docker run -i -v /path/to/challenge/config.json:/auction/config.json challenge `
     from the challenge directory
 
-##Test
+## Test
 - The test will run automatically when the application run within the Docker environment whereby test results will be 
 shown then
 
-##Note
+## Note
 - The application establishes the winning bidder given the guidelines stated above for each auction and ad unit
 - The tests can be classed as unit test where a few can be automated and used for regression in the future
