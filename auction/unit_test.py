@@ -73,6 +73,20 @@ class UnitTests(unittest.TestCase):
         auction = Auction(site, [AdUnit.banner], bids)
         actual = auction.get_max_bids()
         self.assertEqual(actual['banner'].bid, 50, 'Invalid Auction')
+        
+    @attr('unittest')
+    def test_auction_results_performance(self):
+        """Evaluate response time for auction results"""
+        bids = [Bid(Bidder('BRANDON', -0.001), 'banner', 50),
+                Bid(Bidder('ASEMA', -0.0432), 'banner', 51)]
+        site = Site('test.com', [bids[0].bidder, bids[1].bidder], 40)
+        auction = Auction(site, [AdUnit.banner], bids)
+        time_start = time.time()
+        auction.get_max_bids()
+        time_end = time.time()
+        time_span = time_end - time_start
+        self.assertLess(time_span, 1,
+                        'Results Method Performance Inadequate')
 
 
 if __name__ == '__main__':
