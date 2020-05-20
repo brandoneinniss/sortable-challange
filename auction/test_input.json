@@ -1,0 +1,107 @@
+[
+    {
+        "site": "houseofcheese.com",
+        "units": ["banner", "sidebar"],
+        "bids": [
+            {
+                "bidder": "AUCT",
+                "unit": "banner",
+                "bid": 35
+            },
+            {
+                "bidder": "BIDD",
+                "unit": "sidebar",
+                "bid": 60
+            },
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 55
+            }
+        ]
+    },
+    {
+        "site": "test1.com",
+        "units": ["banner", "sidebar"],
+        "bids": [
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 35
+            },
+            {
+                "bidder": "BIDD",
+                "unit": "sidebar",
+                "bid": 60
+            },
+            {
+                "bidder": "CEILING",
+                "unit": "sidebar",
+                "bid": 60
+            }
+        ]
+    },
+    {
+        "site": "test2.com",
+        "units": ["banner", "sidebar"],
+        "bids": [
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 35
+            },
+            {
+                "bidder": "PAUL",
+                "unit": "sidebar",
+                "bid": 60
+            },
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 55
+            }
+        ]
+    },
+    {
+        "site": "test3.com",
+        "units": ["banner", "sidebar"],
+        "bids": [
+            {
+                "bidder": "AUCT",
+                "unit": "banner",
+                "bid": 11
+            },
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 19
+            }
+        ]
+    },
+    {
+        "site": "test4.com",
+        "units": ["banner", "sidebar"],
+        "bids": [
+            {
+                "bidder": "AUCT",
+                "unit": "banner",
+                "bid": 35
+            },
+            {
+                "bidder": "BIDD",
+                "unit": "sidebar",
+                "bid": 60
+            },
+            {
+                "bidder": "AUCT",
+                "unit": "sidebar",
+                "bid": 55
+            },
+            {
+                "bidder": "CEILING",
+                "unit": "banner",
+                "bid": 45
+            }
+        ]
+    }
+]
