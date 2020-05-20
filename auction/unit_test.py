@@ -18,10 +18,10 @@ import jsonschema
 @attr('integration')
 class UnitTests(unittest.TestCase):
     """End-to-end Smoke Test"""
-    config_schema_path = 'util/config_schema.json'
-    input_schema_path = 'util/input_schema.json'
-    test_config_path = 'test_config.json'
-    test_input_path = 'test_input.json'
+    config_schema_path = '/auction/util/config_schema.json'
+    input_schema_path = '/auction/util/input_schema.json'
+    test_config_path = '/auction/test_config.json'
+    test_input_path = '/auction/test_input.json'
 
     def setUp(self):
         self.operator = TestData()
