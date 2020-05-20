@@ -10,6 +10,7 @@ class TestData:
 
     @staticmethod
     def mock_config_parser_parse():
+        """Mock data required for config parser"""
         mock_bidder_objects = {
             'AUCT': BidderData(name='AUCT', adjustment=0.0625),
             'BIDD': BidderData(name='BIDD', adjustment=0),
@@ -28,6 +29,7 @@ class TestData:
 
     @staticmethod
     def mock_input_parser_parse():
+        """Mock data required for input parser"""
         auction1_bids_list = [BidData(bidder='AUCT', unit='banner', bid=35),
                               BidData(bidder='BIDD', unit='sidebar', bid=60),
                               BidData(bidder='AUCT', unit='sidebar', bid=55)]
