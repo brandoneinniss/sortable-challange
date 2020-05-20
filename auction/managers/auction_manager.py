@@ -10,6 +10,7 @@ class AuctionManager:
         self.site_dict = site_dict
 
     def generate_auction_results(self):
+        """Generate auction results each auction in list"""
         ad_wins = {'invalid': []}
         for auction in self.auctions:
             if auction is not None:
@@ -20,6 +21,7 @@ class AuctionManager:
         return ad_wins
 
     def display_result(self, result):
+        """Prints auction results to display"""
         if result[1]:
             print('----------------' + result[0] + '--------------')
             for data in result[1].items():
