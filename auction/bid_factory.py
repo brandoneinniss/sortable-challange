@@ -7,6 +7,7 @@ from models.bidder import Bidder
 class BidFactory:
     @staticmethod
     def create_bids(bids_data, bidders_data: Dict[str, Bidder]):
+        """Creates a list of bids objects and returns a list"""
         bids_object_list = []
         for bid in bids_data:
             if bid.bidder in bidders_data:
@@ -17,6 +18,7 @@ class BidFactory:
 
     @staticmethod
     def _create_bid(bid_data, bidder: Bidder):
+        """Creates a single bid object and returns a bid"""
         bid_bidder = bidder
         bid_unit = bid_data.unit
         bid = bid_data.bid
