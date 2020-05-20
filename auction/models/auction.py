@@ -16,6 +16,7 @@ class Auction:
         self.bids = bids
 
     def get_max_bids(self):
+        """Calculates highest bid for auction and returns dictionary"""
         max_bids = {}
         for bid in self.bids:
             if all([bid.bidder in self.site.bidders,
