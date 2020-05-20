@@ -7,6 +7,3 @@ from models.bid import Bid
 @dataclass
 class InputData:
     auctions: List
-    # site: str
-    # units: List[AdUnit]
-    # bids: List[Bid]
